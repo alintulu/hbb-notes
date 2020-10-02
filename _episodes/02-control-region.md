@@ -1,12 +1,13 @@
 ---
-title: "Introduction"
+title: "Control region"
 teaching: 10
-exercises: 0
+exercises: 10
 questions:
-- "Why do we need data-driven background estimations? What is the ABCD method?"
+- "What is a control region? How should we select our control region C?"
 objectives:
-- "Understand the motivation for data-driven background estimation"
-- "Get a first idea of the ABCD method"
+- "Understand the concept of control region"
+- "Learn the required features for a good control region"
+- "See how the control region is defined in Higgs to tau tau analysis example"
 keypoints:
 - "Data-driven background estimates are a must in situations where you cannot get a reliable estimate from simulation"
 - "They are also useful to validate predictions from simulations"
@@ -15,20 +16,43 @@ keypoints:
 - "Differences between the control region and signal region are accounted for by event weights called transfer factors"
 ---
 
-## Background estimation methods
+## Control regions
 
 FIXME
 
-## ABCD method
+## Role of control region C
 
 ![](assets/img/abcd_diagram.png)
 
 FIXME
 
 
-## QCD estimation in Higgs to tau tau example
+## Definition of control region C in the Higgs to tau tau analysis example
 
-FIXME
+https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis/blob/master/histograms.py#L120
+
+~~~
+for thing in collection:
+    do_something
+        # Book histograms for the signal region
+        df1 = df.Filter("q_1*q_2<0", "Require opposited charge for signal region")
+        df1 = filterGenMatch(df1, label)
+        hists = {}
+        for variable in variables:
+            hists[variable] = bookHistogram(df1, variable, ranges[variable])
+        report1 = df1.Report()
+
+        # Book histograms for the control region used to estimate the QCD contribution
+        df2 = df.Filter("q_1*q_2>0", "Control region for QCD estimation")
+        df2 = filterGenMatch(df2, label)
+        hists_cr = {}
+        for variable in variables:
+            hists_cr[variable] = bookHistogram(df2, variable, ranges[variable])
+        report2 = df2.Report()
+~~~
+{: .python}
+
+Task: run histograms.py and inspect the histograms with ROOT TBrowser.
 
 {% include links.md %}
 
