@@ -13,8 +13,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {: .prereq}
 
 > ## Helpline
-> Instructions written by Santeri Laurila (CERN), firstname.lastname@cern.ch
-> All Higgs to tau tau code is written by Stefan Wunsch (CERN)
+> Instructions written by **Santeri Laurila** (CERN). All example code we use is written by *Stefan Wunsch* (CERN). You can reach us by email (firstname.lastname@cern.ch).
 {: .callout}
 
 Welcome! This lesson will teach you the beasics of a commonly used background estimation known as the ABCD method.
