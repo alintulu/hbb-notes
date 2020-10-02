@@ -9,11 +9,8 @@ objectives:
 - "See how the transfer factor is derived and applied in the in Higgs to tau tau analysis example"
 
 keypoints:
-- "Data-driven background estimates are a must in situations where you cannot get a reliable estimate from simulation"
-- "They are also useful to validate predictions from simulations"
-- "The ABCD method is a common background estimated concept, based on four different regions in phase space"
-- "In this method, background shape in the signal region is estimated using a control region"
-- "Differences between the control region and signal region are accounted for by event weights called transfer factors"
+- "Transfer factors are event weights that account for the differences between a control region and the signal region"
+- "In the ABCD method, they are derived by comparing regions A and B, and applied to transfer the background estimate from region C into the singal region D"
 ---
 
 ![](../assets/img/abcd_diagram.png)
