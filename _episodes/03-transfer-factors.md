@@ -63,6 +63,9 @@ To derive transfer factors, we want to produce exactly the same histograms, but 
 
 Let us define regions A and B so that they are identical to C and D, except that **we invert the muon isolation criterion**. Instead of requiring a tightly isolated muon (iso_1<0.1), let us use events with more loosely isolated muons and require iso_1>0.1. 
 
+Here is a plot that shows the distribution of this muon isolation variable:
+![](../assets/img/iso_1.png)
+
 > ## Challenge
 > Make a copy f the histograms.py file:
 > ~~~
