@@ -88,6 +88,6 @@ For doing this, we use a separate script that is available [here](https://github
 > ~~~
 > {: .language-bash}
 > What is the transfer factor given by the script?
-
+{: .challenge}
 
 {% include links.md %}
