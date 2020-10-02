@@ -49,6 +49,7 @@ In the [histograms.py script](https://github.com/cms-opendata-analyses/HiggsTauT
 ~~~
 {: .python}
 
+> ## Challenge
 > Task: run histograms.py and inspect the histograms with ROOT TBrowser.
 {: .challenge}
 
