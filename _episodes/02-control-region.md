@@ -58,9 +58,35 @@ In the [histograms.py script](https://github.com/cms-opendata-analyses/HiggsTauT
 {: .python}
 
 > ## Challenge
-> Task: run histograms.py and inspect the histograms with ROOT TBrowser.
+> Task: run the Higgs to tau tau analysis up to the step where you produce the histograms (python histograms.py) according to [the instructions on this page](https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis). 
+> 
+> Then inspect the histograms with ROOT TBrowser. Look at the histograms for the largest singal process (ggH), and compare the histograms showing the signal region (no postfix in the histogram name) and those showing the control region ("cr" postix in the histogram name). Which region has more signal? 
+>
+> The scroll through the selection of histograms to see all the different processes contained in this root file.
 {: .challenge}
 
+## Estimating the QCD background in control region C 
+
+Often our control region C is not completely pure, so that it would contain only events produced by the background process we want to estimate. Instead, our data sample is a mixture of different processes. This is also the case in the Higgs to tau tau analysis example.
+
+In order to estimate the yield and the shape of the QCD multijet background, we need to *estimate all other processes that enter the control region, and subtract their contribution from the data*. Luckily, we know how to estimate all the other relevant background processes -- from simulation! 
+
+The subtraction of simulated processes (which are normalized to the integrated luminosity and the cross section), is done in the potting sxcript [plot.py](https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis/blob/master/plot.py#L155), where you can find the following lines:
+~~~
+    # Data-driven QCD estimation
+    QCD = getHistogram(tfile, "dataRunB", variable, "_cr")
+    QCDRunC = getHistogram(tfile, "dataRunC", variable, "_cr")
+    QCD.Add(QCDRunC)
+    for name in ["W1J", "W2J", "W3J", "TT", "ZLL", "ZTT"]:
+        ss = getHistogram(tfile, name, variable, "_cr")
+        QCD.Add(ss, -1.0)
+    for i in range(1, QCD.GetNbinsX() + 1):
+        if QCD.GetBinContent(i) < 0.0:
+            QCD.SetBinContent(i, 0.0)
+~~~
+{: .python}
+
+Soon we get to run this script and inspect the resulting QCD background estimate.
 
 {% include links.md %}
 
