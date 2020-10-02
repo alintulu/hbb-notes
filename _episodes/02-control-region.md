@@ -5,7 +5,7 @@ exercises: 10
 questions:
 - "What is a control region? How should we select our control region C?"
 objectives:
-- "Understand the concept of control region"
+- "Understand the notions of signal and control regions"
 - "Learn the required features for a good control region"
 - "See how the control region is defined in Higgs to tau tau analysis example"
 keypoints:
@@ -16,16 +16,24 @@ keypoints:
 - "Differences between the control region and signal region are accounted for by event weights called transfer factors"
 ---
 
-## Control regions
+## Signal and control regions
 
-FIXME
+By *signal region*, we mean the region in the phase space defined by our *signal selection*, i.e. the trigger and all offline selections that we use in the analysis. 
 
-## Role of control region C
+In addition to signal region, often we need one or several *control regions*. These are usually obtained by changing some of the cuts w.r.t. our signal selection, to define regions that are in some aspects *similar to signal region*, but they are *signal-depleted*, i.e. the signal-to-background ratio is very tiny or even zero. Typically we want to define control regions that are *enriched in a particular background process*, and *have sufficient statistics*, i.e. there is enough events that enter the control region to give us sufficient statistical precision.
+
+Sometimes control regions are also referred to as *sidebands*, especially in cases where the signal shows up as a resonance peak, so the signal region is defined by selecting some mass window, and the control regions are defined as sidebands on the left and right side of the mass window.
 
 ![](assets/img/abcd_diagram.png)
 
-FIXME
+## Signal and control regions in teh ABCD method
 
+In the ABCD method, region *D* is our signal region, whereas regions *A*, *B* and *C* are all control regions. 
+
+In the ABCD method, the  *region C is used to estimate the *shape of the background process*, as a function of one or several variables. 
+Therefore we should aim to select a region where we can safely assume the background process to take similar shape as in the signal region D.
+
+Next let us see what this means in the context of the Higgs to tau tau analysis.
 
 ## Definition of control region C in the Higgs to tau tau analysis example
 
