@@ -29,8 +29,7 @@ FIXME
 
 ## Definition of control region C in the Higgs to tau tau analysis example
 
-https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis/blob/master/histograms.py#L120
-
+In the [histograms.py script](https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis/blob/master/histograms.py#L120com) you can find the following lines:
 ~~~
         # Book histograms for the signal region
         df1 = df.Filter("q_1*q_2<0", "Require opposited charge for signal region")
@@ -50,7 +49,9 @@ https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis/blob
 ~~~
 {: .python}
 
-Task: run histograms.py and inspect the histograms with ROOT TBrowser.
+> Task: run histograms.py and inspect the histograms with ROOT TBrowser.
+{: .challenge}
+
 
 {% include links.md %}
 
