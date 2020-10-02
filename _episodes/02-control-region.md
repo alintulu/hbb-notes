@@ -9,11 +9,9 @@ objectives:
 - "Learn the required features for a good control region"
 - "See how the control region is defined in Higgs to tau tau analysis example"
 keypoints:
-- "Data-driven background estimates are a must in situations where you cannot get a reliable estimate from simulation"
-- "They are also useful to validate predictions from simulations"
-- "The ABCD method is a common background estimated concept, based on four different regions in phase space"
-- "In this method, background shape in the signal region is estimated using a control region"
-- "Differences between the control region and signal region are accounted for by event weights called transfer factors"
+- "Signal-depleted control regions are often used in background estimations"
+- "In the ABCD method, the background shape in signal region D is estimated using a control region C"
+- "To obtain estimate for a single process, e.g. QCD multijets, one can simply subtract other known (simulated) processes from data"
 ---
 
 ## Signal and control regions
