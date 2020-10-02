@@ -16,7 +16,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 > Instructions written by **Santeri Laurila** (CERN). All example code we use is written by **Stefan Wunsch** (CERN). You can reach us by email (firstname.lastname@cern.ch).
 {: .callout}
 
-Welcome! This lesson will teach you the beasics of a commonly used background estimation known as the ABCD method.
+Welcome! This lesson will teach you the basics of a commonly used background estimation known as the ABCD method.
 
 We will apply this method to estimate the QCD background in the Higgs to tau tau analysis example.
 
