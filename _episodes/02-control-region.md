@@ -1,5 +1,5 @@
 ---
-title: "Control region"
+title: "Control regions"
 teaching: 10
 exercises: 10
 questions:
@@ -32,8 +32,6 @@ FIXME
 https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis/blob/master/histograms.py#L120
 
 ~~~
-for thing in collection:
-    do_something
         # Book histograms for the signal region
         df1 = df.Filter("q_1*q_2<0", "Require opposited charge for signal region")
         df1 = filterGenMatch(df1, label)
