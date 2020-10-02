@@ -31,6 +31,10 @@ Another common approach is to use **pdeudo-data**, i.e. replace the real data wi
 
 Like all analysis steps, the ABCD metod comes with some systematic uncertainties. Possible sources include **(a)** the systematic uncertainties of the simulated samples that are subtracted from data in regions A, B and C, **(b)** the statistical uncertainty of the background shape due to limited statistics in region C, **(c)** the statisical uncertainty of transfer factors due to limited statistics in regions A and B. In a realistic analysis, these (and possibly others) should be taken into account.
 
+If the regions A, B, C and D are **orthogonal**, i.e. they do not contain same events, these different sources of uncertainty are *independent*, which makes them easier to handle in the statistical model used to extract the results (no worrying about correlations). Therefore in a typical analysis **all signal and control regions are orthogonal (non-overlapping)**.
+
+Often when choosing a suitable background estimation method (simulations, ABCD, something else..?), one needs to consider not only which methods give a reliable result, but also which method yields the smallest systematic and statistical uncertainty for the final result. 
+
 ## More advanced versions of the ABCD method
 
 There are plenty of more advanced methods based on the simple ABCD idea. These can include analytic fits of distributions (to trade statistical uncertainties with possibly smaller fit uncertainties), sampling of the background shape and transfer factors in several dimensions (i.e. as a function of several different variables), simultaneous fits of all regions as well as possibly other control regions, etc. It has been shown that [using machine learning tools to optimize the selections](https://arxiv.org/abs/2007.14400) for different regions can lead to further improvement in analysis sensitivity. So we have really just scratched the surface here, but now you have the basic knowledge to dive deeper when you feel like doing it! 
