@@ -9,6 +9,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 > In order to complete this lesson you need
 > - [ROOT CERN](https://root.cern/) 6.16 or later installed. You can set up ROOT as recommended [here](https://cms-opendata-workshop.github.io/workshop-lesson-root/02-get-root/index.html).
 > - The [Higgs to tau tau analysis example code](https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis) installed and running.
+> A stable internet connection to access the input data.
 {: .prereq}
 
 > ## Helpline
@@ -28,5 +29,5 @@ We will apply this method to estimate the QCD background in the Higgs to tau tau
 
 > ## Input data 
 > The data used in this lesson are in pre-processed "NanoAOD" datasets, which are listed [here](http://opendata.web.cern.ch/record/12350). 
-> The code will access this data automatically.
+> The code will access this data automatically, so you don't need to download it manually.
 {: .callout}
