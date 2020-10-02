@@ -39,7 +39,7 @@ In this lesson, we will use the open data Higgs to tau tau analysis example](htt
 
 As shown in the diagram above, in this example the **control region C is defined by selecting events with a same-sign tau pair** (one hadronic tau and one muon from a tau decay), whereas the **in the signal region D opposite-sign tau pair is required**. The transfer factors are obtained from regions A and B, defined by inverting the isolation criterion used to select the muon. 
 
-Next we will see how to do all of this in practice. Here is one of the final output of the Higgs to tau tau analysis, (it is the di-tau mass, reconstructed from a hadronic tau candidate and a muon candidate) showing the different background processes including the QCD background estimate that we are produce during this lesson. This plot corresponds to tour signal region **D**.
+Next we will see how to do all of this in practice. Here is one of the final output of the Higgs to tau tau analysis, (it is the di-tau mass, reconstructed from a hadronic tau candidate and a muon candidate) showing the different background processes including the QCD background estimate that we will produce during this lesson. All the other background are estimated from simulation in this analysis. Since this plot corresponds to tour signal region **D**, also the signal processes ggH and qqH are clearly visible in the plot.
 
 ![](../assets/img/m_vis.png)
 
