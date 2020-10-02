@@ -21,6 +21,8 @@ FIXME
 
 ## ABCD method
 
+![](assets/img/abcd_diagram.png)
+
 FIXME
 
 
