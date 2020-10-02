@@ -2,7 +2,6 @@
 layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
-title: "Background Estimation: ABCD Method"
 ---
 ![](assets/img/abcd_letters.png)
 
