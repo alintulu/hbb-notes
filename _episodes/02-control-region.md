@@ -28,7 +28,7 @@ Sometimes control regions are also referred to as **sidebands**, especially in c
 
 In the ABCD method, region **D** is our signal region, whereas regions **A**, **B** and **C** are all control regions. 
 
-In the ABCD method, the  **region C is used to estimate the *shape of the background process**, as a function of one or several variables. 
+In the ABCD method, the  **region C is used to estimate the shape of the background process**, as a function of one or several variables. 
 Therefore we should aim to select a region where we can safely assume the background process to take similar shape as in the signal region D.
 
 Next let us see what this means in the context of the Higgs to tau tau analysis.
@@ -65,9 +65,9 @@ In the [histograms.py script](https://github.com/cms-opendata-analyses/HiggsTauT
 
 ## Estimating the QCD background in control region C 
 
-Often our control *region C is not completely pure*, so that it would contain only events produced by the background process we want to estimate. Instead, our data sample is a mixture of different processes. This is also the case in the Higgs to tau tau analysis example.
+Often our control **region C is not completely pure**, so that it would contain only events produced by the background process we want to estimate. Instead, our data sample is a mixture of different processes. This is also the case in the Higgs to tau tau analysis example.
 
-In order to estimate the yield and the shape of the QCD multijet background, we need to *estimate all other processes that enter the control region, and subtract their contribution from the data*. Luckily, we know how to estimate all the other relevant background processes -- from simulation! 
+In order to estimate the yield and the shape of the QCD multijet background, we need to **estimate all other processes that enter the control region, and subtract their contribution from the data**. Luckily, we know how to estimate all the other relevant background processes -- from simulation! 
 
 The subtraction of simulated processes (which are normalized to the integrated luminosity and the cross section), is done in the potting sxcript [plot.py](https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis/blob/master/plot.py#L155), where you can find the following lines:
 ~~~
