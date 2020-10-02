@@ -19,11 +19,11 @@ keypoints:
 
 Now that we know how to obtain our background shape from control region C, the next step is to figure out its proper normalization. 
 
-In practice it is impossible to find a control region where the selection efficiencies for each background process would be identical to the signal region. Even if the overall efficiency would be the same, probably the behaviour is not identical as a function of all different variables considered in the analysis. Therefore we usually need to correct for the different selcetion efficiencies between regions C and D.
+In practice it is impossible to find a control region where the selection efficiencies for each background process would be identical to the signal region. Even if the overall efficiency would be the same, probably the behaviour is not identical as a function of all different variables considered in the analysis. Therefore we usually need to **correct for the different selcetion efficiencies between regions C and D**.
 
-This correction is done by deriving *additional event weights called transfer factors*. In the simplest case, if we think that the background shape we get from region C is correct, we can just correct its normalization by scaling this background component by some factor -- so our transfer factor is a single number, and we can weight all events in our background estimate by this single weight. However, usually also the transfer factor depends on one or several variables, so we need to apply different weights to different events.
+This correction is done by deriving **additional event weights called transfer factors**. In the simplest case, if we think that the background shape we get from region C is correct, we can just correct its normalization by scaling this background component by some factor -- so our transfer factor is a single number, and we can weight all events in our background estimate by this single weight. However, usually also the transfer factor depends on one or several variables, so we need to apply different weights to different events.
 
-The transfer factors are derived using two additional control regions, A and B (see the figure above). The idea is that the difference between A and B is defined by the same cut(s) as the difference between C and D, so *if we parametrize the change of our background from A to B with transfer factors, these same factors should correctly describe the difference between C and D*. 
+The transfer factors are derived using two additional control regions, A and B (see the figure above). The idea is that the difference between A and B is defined by the same cut(s) as the difference between C and D, so **if we parametrize the change of our background from A to B with transfer factors, these same factors should correctly describe the difference between C and D**. 
 
 In case of a single transfer factor, we define it as a fraction of event yields: **TF = N(B) / N(A)**. Then we can calculate the background yield in the signal region as **N(D) = TF x N(C) = (N(B)/N(A)) x N(C)**. Another way to state is is that we assume that **N(A)/N(B) = N(C)/N(D)**, and then the formula follows immediately.
 If we want to catch the dependence of transfer factors on different variables, we can do this with histograms so that these same formulas hold for each single histogram bin.
@@ -61,7 +61,7 @@ At this point you might be wondering: where did this transfer factor come from? 
 As discussed above, the code histograms.py produces the histograms for regions C and D. 
 To derive transfer factors, we want to produce exactly the same histograms, but for regions A and B. 
 
-Let us define regions A and B so that they are identical to C and D, except that we invert the muon isolation criteria. Instead of requiring a tightly isolated muon (iso_1<0.1), let us use events with more loosely isolated muons and require iso_1>0.1. 
+Let us define regions A and B so that they are identical to C and D, except that **we invert the muon isolation criterion**. Instead of requiring a tightly isolated muon (iso_1<0.1), let us use events with more loosely isolated muons and require iso_1>0.1. 
 
 > ## Challenge
 > Make a copy f the histograms.py file:
@@ -90,5 +90,7 @@ For doing this, we use a separate script that is available [here](https://github
 > {: .language-bash}
 > What is the transfer factor given by the script?
 {: .challenge}
+
+(You should get a transfer factor of 1.09, which is actually quite different from 0.8 used in the original example. Our aim here is just to demonstrate the idea of transfer factor estimation.)
 
 {% include links.md %}
