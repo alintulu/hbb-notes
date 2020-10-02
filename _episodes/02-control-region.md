@@ -16,19 +16,19 @@ keypoints:
 
 ## Signal and control regions
 
-By *signal region*, we mean the region in the phase space defined by our *signal selection*, i.e. the trigger and all offline selections that we use in the analysis. 
+By **signal region**, we mean the region in the phase space defined by our **signal selection**, i.e. the trigger and all offline selections that we use in the analysis. 
 
-In addition to signal region, often we need one or several *control regions*. These are usually obtained by changing some of the cuts w.r.t. our signal selection, to define regions that are in some aspects *similar to signal region*, but they are *signal-depleted*, i.e. the signal-to-background ratio is very tiny or even zero. Typically we want to define control regions that are *enriched in a particular background process*, and *have sufficient statistics*, i.e. there is enough events that enter the control region to give us sufficient statistical precision.
+In addition to signal region, often we need one or several **control regions**. These are usually obtained by changing some of the cuts w.r.t. our signal selection, to define regions that are in some aspects **similar to signal region**, but they are **signal-depleted**, i.e. the signal-to-background ratio is very tiny or even zero. Typically we want to define control regions that are **enriched in a particular background process**, and **have sufficient statistics**, i.e. there is enough events that enter the control region to give us sufficient statistical precision.
 
-Sometimes control regions are also referred to as *sidebands*, especially in cases where the signal shows up as a resonance peak, so the signal region is defined by selecting some mass window, and the control regions are defined as sidebands on the left and right side of the mass window.
+Sometimes control regions are also referred to as **sidebands**, especially in cases where the signal shows up as a resonance peak, so the signal region is defined by selecting some mass window, and the control regions are defined as sidebands on the left and right side of the mass window.
 
 ![](assets/img/abcd_diagram.png)
 
 ## Signal and control regions in teh ABCD method
 
-In the ABCD method, region *D* is our signal region, whereas regions *A*, *B* and *C* are all control regions. 
+In the ABCD method, region **D** is our signal region, whereas regions **A**, **B** and **C** are all control regions. 
 
-In the ABCD method, the  *region C is used to estimate the *shape of the background process*, as a function of one or several variables. 
+In the ABCD method, the  **region C is used to estimate the *shape of the background process**, as a function of one or several variables. 
 Therefore we should aim to select a region where we can safely assume the background process to take similar shape as in the signal region D.
 
 Next let us see what this means in the context of the Higgs to tau tau analysis.
@@ -65,7 +65,7 @@ In the [histograms.py script](https://github.com/cms-opendata-analyses/HiggsTauT
 
 ## Estimating the QCD background in control region C 
 
-Often our control region C is not completely pure, so that it would contain only events produced by the background process we want to estimate. Instead, our data sample is a mixture of different processes. This is also the case in the Higgs to tau tau analysis example.
+Often our control *region C is not completely pure*, so that it would contain only events produced by the background process we want to estimate. Instead, our data sample is a mixture of different processes. This is also the case in the Higgs to tau tau analysis example.
 
 In order to estimate the yield and the shape of the QCD multijet background, we need to *estimate all other processes that enter the control region, and subtract their contribution from the data*. Luckily, we know how to estimate all the other relevant background processes -- from simulation! 
 
