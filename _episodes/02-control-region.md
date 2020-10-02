@@ -55,10 +55,12 @@ In the [histograms.py script](https://github.com/cms-opendata-analyses/HiggsTauT
 ~~~
 {: .python}
 
+As you can see, here **define the signal regions by requiring that hadronic tau and the muon have opposite signs*** (as they should if they are produced in a decay of a neutral Higgs boson), i.e. `q_1*q_2<0`, while the **control region is defined by requiring them to have the same sign**, i.e. `q_1*q_2>0`.
+
 > ## Challenge
 > Task: run the Higgs to tau tau analysis up to the step where you produce the histograms (python histograms.py) according to [the instructions on this page](https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis). 
 > 
-> Then inspect the histograms with ROOT TBrowser. Look at the histograms for the largest singal process (ggH), and compare the histograms showing the signal region (no postfix in the histogram name) and those showing the control region ("cr" postix in the histogram name). Which region has more signal? 
+> Then inspect the histograms with ROOT TBrowser. Look at the histograms for the largest signal process (ggH), and compare the histograms showing the signal region (no postfix in the histogram name) and those showing the control region (`_cr` postfix in the histogram name). Which region has more signal? 
 >
 > The scroll through the selection of histograms to see all the different processes contained in this root file.
 {: .challenge}
@@ -83,6 +85,8 @@ The subtraction of simulated processes (which are normalized to the integrated l
             QCD.SetBinContent(i, 0.0)
 ~~~
 {: .python}
+
+The point here is that this way, with the ABCD method, we can estimate the process that is difficult to simulate (QCD) by using data, as well as simulated samples for the background processes for which the simulations are relatively reliable (here: W+Jets, ttbar, Drell-Yan). 
 
 Soon we get to run this script and inspect the resulting QCD background estimate.
 
