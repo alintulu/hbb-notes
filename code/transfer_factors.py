@@ -50,9 +50,9 @@ def main(variable):
     events_ss = data_ss.Integral()
 
     # Get extrapolation factor by dividing the counts
-    print("Sum of QCD events in anti-isolated opposite-sign region: {:.2f}".format(events_os))
-    print("Sum of QCD events in anti-isolated same-sign region: {:.2f}".format(events_ss))
-    print("QCD extrapolation factor from same-sign to opposite-sign region: {:.2f}".format(events_ss / events_os))
+    print("Sum of QCD events in anti-isolated opposite-sign region B: {:.2f}".format(events_os))
+    print("Sum of QCD events in anti-isolated same-sign region A: {:.2f}".format(events_ss))
+    print("QCD extrapolation factor from same-sign to opposite-sign region (B/A): {:.2f}".format(events_os / events_ss))
 
 
 # Perform the QCD extrapolation measurement inclusively along the given variable
