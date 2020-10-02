@@ -1,34 +1,32 @@
 ---
-title: "Introduction"
+title: "Summary & outlook"
 teaching: 10
 exercises: 0
 questions:
-- "Why do we need data-driven background estimations? What is the ABCD method?"
+- "What did we actually just do, and how realistic was it?"
+- "How is the ABCD method used in real life?"
 objectives:
-- "Understand the motivation for data-driven background estimation"
-- "Get a first idea of the ABCD method"
+- "Summarize what we have just learned"
+- "Get an idea of how ABCD method can be applied in more advanced ways"
 keypoints:
-- "Data-driven background estimates are a must in situations where you cannot get a reliable estimate from simulation"
-- "They are also useful to validate predictions from simulations"
-- "The ABCD method is a common background estimated concept, based on four different regions in phase space"
-- "In this method, background shape in the signal region is estimated using a control region"
-- "Differences between the control region and signal region are accounted for by event weights called transfer factors"
+- "The basic concept of ABCD method is rather simple, but in practice things can get complicated"
+- "Careful validation of your background estimates is a necessity"
+- "There are several more advanced techniques in use, based on the basic concept of the ABCD method"
+
 ---
 
-## Background estimation methods
+## Summary of the ABCD method
 
 FIXME
 
-## ABCD method
+## Validation of the background estimate
 
 ![](assets/img/abcd_diagram.png)
 
 FIXME
 
+## More advanced versions of the ABCD method
 
-## QCD estimation in Higgs to tau tau example
 
-FIXME
 
 {% include links.md %}
-
