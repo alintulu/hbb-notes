@@ -6,19 +6,14 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 ![](assets/img/abcd_letters.png)
 
 > ## Prerequisites
-> In order to complete this lesson you need
-> - [ROOT CERN](https://root.cern/) 6.16 or later installed. You can set up ROOT as recommended [here](https://cms-opendata-workshop.github.io/workshop-lesson-root/02-get-root/index.html).
-> - The [Higgs to tau tau analysis example code](https://github.com/cms-opendata-analyses/HiggsTauTauNanoAODOutreachAnalysis) installed and running.
-> A stable internet connection to access the input data.
+> TODO
 {: .prereq}
 
 > ## Helpline
-> Instructions written by **Santeri Laurila** (CERN). All example code we use is written by **Stefan Wunsch** (CERN). You can reach us by email (firstname.lastname@cern.ch).
+> This is a silly way fro Adelina Lintuluoto to keep track of her analysis.
 {: .callout}
 
-Welcome! This lesson will teach you the basics of a commonly used background estimation known as the ABCD method.
-
-We will apply this method to estimate the QCD background in the Higgs to tau tau analysis example.
+TODO
 
 <!-- this is an html comment -->
 
@@ -27,6 +22,5 @@ We will apply this method to estimate the QCD background in the Higgs to tau tau
 {% include links.md %}
 
 > ## Input data 
-> The data used in this lesson are in pre-processed "NanoAOD" datasets, which are listed [here](http://opendata.web.cern.ch/record/12350). 
-> The code will access this data automatically, so you don't need to download it manually.
+> TODO
 {: .callout}
